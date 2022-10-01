@@ -1,0 +1,92 @@
+<! DOCTYPE html>  <!--Version du html-->
+    <html> <!--Fichier html-->
+        <head>  <!--Infos pour le navigateur, non visible-->
+            <meta charset="UTF-8">  <!--encodage-->
+            <meta name="viewport" content="width=device-width;maximum-scale=1; minimum-scale=1;"/>  <!--adabtabilité aux écrans-->
+            <meta name="description" content="description,mots-clés pour engin de recherche, max 155 caractère, réferencement" />
+            <link rel="stylesheet" type="text/css" href="../css/styles.css"> <!-- lien avec le fichier CSS -->
+            <title>Panorama Algérie</title> 
+        </head>
+     <!---------------------------------------------------------------------------------------------------------------------------->   
+        <body> <!--Début de notre page HTML-->
+           <section id="conteneur"> 
+              <header> <!--En tete de page-->
+                <h1> À propos </h1> <!--Titre de la page-->
+              </header>
+     <!---------------------------------------------------------------------------------------------------------------------------->   
+              <nav> <!--Menu de navigation-->
+                <ul> <!--Liste à puces-->
+                   <li><a href="../index.html"> <strong> Accueil </strong> </a> </li> <!-- li= liste item -->
+                   <li><a href="plats.html"> <strong> Gateaux et plats traditionnels </strong> </a> </li>
+                   <li><a href="lieux.html"> <strong> Lieux touristiques </strong> </a> </li>
+                   <li><a href="robes.html"> <strong> Robes traditionnelles </strong> </a> </li>
+                   <li><a href="sport.html"> <strong> Sport Populaire </strong> </a> </li>
+                </ul>
+              </nav>
+     <!---------------------------------------------------------------------------------------------------------------------------->   
+               <main> <!--contenu principal de la page-->
+                    <img class="distance" src="../images/faq.jpg" />
+                    <button class="accordion"> Quels sont les vaccins obligatoires / recommandés pour un voyage en Algérie? </button>
+                    <div class="panel">
+                         <p> Les CLSC içi au Québec indique de mettre à jour le vaccin contre l’hépatite A. En fonction de la durée du séjour, il peut être prudent de se faire vacciner également contre l’hépatite B, la rage et la typhoïde. Soyez aussi prévenant envers les piqûres de moustiques. </p>
+                    </div>
+                    <button class="accordion"> Ce qu’il ne faut pas oublier dans ses bagages pour un voyage en Algérie? </button>
+                    <div class="panel">
+                         <p> Il peut faire très chaud en Algérie. Prenez avec vous un chapeau, de la crème solaire, des lunettes de soleil et des vêtements légers mais longs, qui couvrent les bras et les jambes. N’oubliez pas que les températures peuvent vite tomber en soirée : prenez aussi un pull et des vêtements plus chauds. Amenez des chaussures de marche confortables, un maillot de bain et bien sûr une trousse de secours, avec quelques médicaments au cas où et un répulsif anti-moustique. </p>
+                    </div>
+                    <button class="accordion"> Quels sont les endroits les plus visités? </button>
+                    <div class="panel">
+                         <p>les wilayas les plus visités sont : Alger, Béjaia, Annaba, Oran, timimoune, Bachar, Tamanghasset..</p>
+                    </div>
+                    <button class="accordion"> Ai-je besoin d’un visa pour un voyage en Algérie? </button>
+                    <div class="panel">
+                         <p> Les ressortissants canadiens doivent se munir d’un visa pour se rendre en Algérie avant leur départ. Celui-ci peut être obtenu auprès des consulats. Pour un visa de tourisme, il vous faudra fournir un justificatif d’hébergement lors de votre séjour en Algérie. Rendez-vous sur le site de l’Ambassade d'Algérie au Canada pour la liste complète des documents nécessaires. </p>
+                    </div>
+                    <button class="accordion"> Quelle est la langue parlée en Algérie ? </button>
+                    <div class="panel">
+                         <p> L’Algérie a deux langues officielles : l’arabe, et le tamazight, langue berbère devenue lange d’Etat en 2016. Dans les rues, vous pourrez entendre le dialecte arabe local, le darja, et évidemment le français, qui reste très rependu dans le pays. Vous ne devriez pas avoir de problème à vous faire comprendre en français. D’ailleurs, c’est la langue la plus utilisée par les algériens sur les réseaux sociaux. <p>
+                    </div>
+                    <button class="accordion"> Quels sont les monnaies qu’on peut échanger pour du Dinar Algérien? </button>
+                    <div class="panel">
+                         <p> Euro, Dollar US, Dollar Canadians. <p>
+                    </div>
+                    <button class="accordion"> Quelle est la Religion pratiquée en Algérie ? </button>
+                    <div class="panel">
+                         <p> L’Algérie compte 99 pourcent de musulmans. L’Islam est la religion d’Etat. Les autres cultes sont autorisés avec certaines limites et encadrés par la lois. <p>
+                    </div>
+                    <button class="accordion"> Quelle est la meilleure saison pour visiter l'Algérie? </button>
+                    <div class="panel">
+                         <p> Mieux vaut partir au printemps ou en automne, quand le climat est plus modéré et doux. Evitez le centre et le sud du pays en été : les températures dans le désert sont alors insupportables et dangereuses pour votre santé. Si vous souhaitez partir l’hiver, prenez des vêtements chauds. <p>
+                    </div>
+                    <script>
+                           var acc = document.getElementsByClassName("accordion");
+                           var i;
+                           for (i = 0; i < acc.length; i++) {
+                               acc[i].addEventListener("click", function() {
+                               this.classList.toggle("active");
+                               var panel = this.nextElementSibling;
+                               if (panel.style.display === "block") {
+                                   panel.style.display = "none";
+                               } 
+                               else {
+                                     panel.style.display = "block";
+                                    }
+                               });
+                           }
+                    </script> 
+               </main>
+     <!---------------------------------------------------------------------------------------------------------------------------->   
+              <footer> <!--Pied de page-->
+                <a href="plan_du_site.html">Plan du site</a>
+                <a href="a_propos.html">À propos</a>
+                <a href="sites_interets.html">Sites d’intérêts</a>
+                <a href="faq.html">FAQ</a>
+                <p><a href="mailto:bourouhour@csdmedu.ca"> <img src="../images/Contact.png"></a></p>
+                <a href="https://www.facebook.com/profile.php?id=100010799925877" target="_blank"> <img src="../images/facebook.png"></a>
+                <a href="https://twitter.com/BourouhouR" target="_blank"> <img src="../images/twitter.png"></a>
+                <a href="https://www.linkedin.com/in/riad-bourouhou-244728115/" target="_blank"> <img src="../images/linkedin.png"></a>
+                <p>Vous pouvez vous connecter à ce site en utilisant les navigateurs suivants: Goggle Chrome, Mozilla Firefox, Edge, Opera, ou Safari.</p>
+               </footer>
+           </section>
+        </body>
+    </html>
